@@ -3,6 +3,7 @@
 # Script Date: 3:18 PM 6/27/2023
 # Apply For: Centos 8/Rocky8 RHEL 8
 # Install nginx 1.25.1 PCRE 8.44, Zlib 1.2.11, openssl 3.1.1
+setenforce 0
 adduser nginx --system --no-create-home --shell /bin/false --user-group
 #Install build tools
 dnf groupinstall 'Development Tools' -y
